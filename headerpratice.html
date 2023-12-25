@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header pratice</title>
+    <style>
+        .flex{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .div-1{
+            background-color: rgb(174, 0, 255);
+            height: 90px;
+            width: 300px;
+
+        }
+        .text-1{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            padding-right: 130px;
+            
+        }
+        .div-2{
+            background-color:rgb(174, 0, 255);
+            flex: 1;
+            height: 90px;
+            width: 780px;
+        }
+        .search{
+            height: 50px;
+            flex: 1;
+            width: 500px;
+            margin-left: 160px;
+            margin-top: 20px;
+            border: 2px solid;
+            border-radius: 50px;
+            font-size: 24px;
+            color: rgb(192, 191, 191);
+            padding-left: 10px;
+            flex: 1;
+            width: 600px;
+           
+        }
+        .search:hover{
+            border:5px;
+            border-color: rgb(128, 132, 133);
+        }
+        .div-3{
+            background-color:rgb(174, 0, 255);
+            height: 90px;
+            flex: 1;
+            
+        }
+            
+        .download{
+            height: 60px;
+            width: 150px;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(174, 0, 255);
+            color: rgb(255, 255, 255);
+            border-radius: 3px;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 15px;
+            margin-left: 200px;
+        }
+        .download:hover{
+            background-color: rgb(109, 21, 190);
+            transition: 0.25s;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+    <div class="div-1">
+        <p class="text-1">Home</p>
+    </div>
+    <div class="div-2">
+        <input class="search" type="text" placeholder="Search">
+    </div>
+    <div class="div-3">
+        <button class="download">Download</button>
+    </div>
+    </div>
+    
+</body>
+</html>
