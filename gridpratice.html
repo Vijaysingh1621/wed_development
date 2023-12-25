@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Pratice</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+        .div-1{
+            background-color: palevioletred;
+            height: 300px;
+        }
+        .div-2{
+            background-color: aqua;
+
+        }
+        .div-3{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+    <div class="div-1">200px</div>
+    <div class="div-2">75px</div>
+    <div class="div-3">infinite</div>
+    <div class="div-1">200px</div>
+    <div class="div-2">75px</div>
+    <div class="div-3">infinite</div>
+    <div class="div-1">200px</div>
+    <div class="div-2">75px</div>
+    <div class="div-3">infinite</div>
+    </div>
+</body>
+</html>
