@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box-pratice</title>
+    <style>
+        .flex-box{
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .left-section{
+            height: 55px;
+            background-color: aqua;
+            width: 300px;
+            flex-shrink: 0;
+        }
+        .middle-section{
+            height: 55px;
+            background-color: rgb(18, 75, 56);
+            flex: 1;
+            max-width: 500px;
+            width: 0;
+
+        }
+        .right-section{
+            height: 55px;
+            background-color: rgb(75, 10, 180);
+            width: 250px;
+            flex-shrink: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-box">
+        <div class="left-section">left section</div>
+        <div class="middle-section">middle-section </div>
+        <div class="right-section">right section</div>
+    </div>
+   
+</body>
+</html>
