@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice</title>
+    <style>
+        .body{
+            position: relative;
+        }
+        .cal{
+
+            position: absolute;
+            top:200px;
+            right:500px;
+        }
+        .btn{
+            height: 40px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cal">
+    <button class="btn" onclick=" variable++; console.log(`one added: ${variable}`);">1</button>
+    <button  class="btn" onclick=" variable++; console.log(`two added: ${variable}`);" >2</button>
+    <button  class="btn" onclick=" variable++; console.log(`three added: ${variable}`);">3</button>
+    <button class="btn" onclick=" variable++; console.log(`+ added: ${variable}`);" >+</button>
+    <button class="btn" onclick=" variable++; console.log(`sum added: ${variable}`);">=</button>
+    </div>
+    <script>
+        let variable =0;
+    </script>
+</body>
+</html>
