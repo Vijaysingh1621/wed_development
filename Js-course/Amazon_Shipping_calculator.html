@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amzaon shipping cal</title>
+    <style>
+        .body{
+            position: relative;
+
+        }
+        .box{
+            position: absolute;
+            left: 400px;
+            top: 100px;
+        }
+        .text-1{
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+        .logo{
+            margin-left: 200px;
+            border-radius: 100px;
+        }
+        .text-2{
+            font-size: 40px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+            color: rgb(109, 105, 105);
+        }
+        .js-cost-button{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background-color: rgb(224, 177, 38);
+            border-radius: 20px;
+            border:solid 2px black;
+
+        }
+        :hover.js-cost-button{
+            background-color: yellow;
+            color: black;
+        }
+        .js-cost-input{
+            height: 55px;
+            width: 400px;
+            border-radius: 3px;
+            border: solid 2px grey;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+        }
+        .js-total-cost{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="javascript_pratice/lgo.png" class="logo">
+    <p class="text-1">Amazon shipping calculator</p>
+    <p class="text-2"> Free Shipping for cost over 40$ </p>
+    
+    <input placeholder="Cost of order"
+    class="js-cost-input" onkeydown="
+    handlecostkeydown(event);
+    ">
+    <button  class="js-cost-button" onclick="
+    calculateTotalCost();
+    
+    ">calculate</button>
+    <p class="js-total-cost"></p>
+    </div>
+    <script>
+        function handlecostkeydown(event){
+            if(event.key==='Enter'){
+                calculateTotalCost(); 
+            }
+        }
+        function calculateTotalCost(){
+           const inputElement= document.querySelector('.js-cost-input');
+           let cost = Number(inputElement.value);
+            if(cost <40){
+                cost = cost+10;
+            }
+            document.querySelector('.js-total-cost').innerHTML = `Total cost (including all taxes) : ${cost}$`;
+            
+
+        }
+    </script>
+    
+</body>
+</html>
